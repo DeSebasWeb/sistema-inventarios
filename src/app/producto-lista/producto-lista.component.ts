@@ -9,6 +9,7 @@ import { ProductoService } from '../producto.service';
   styleUrl: './producto-lista.component.css'
 })
 export class ProductoListaComponent {
+  title = 'Sistema de inventarios';
   productos!: Producto[];
   private productoServicio = inject(ProductoService);
   ngOnInit(){

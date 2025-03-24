@@ -9,5 +9,4 @@ import { ProductoListaComponent } from "./producto-lista/producto-lista.componen
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Sistema de inventarios';
 }
