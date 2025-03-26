@@ -23,7 +23,7 @@ export class ProductoService {
   editarProducto(id: number, producto: Producto){
     return this.clienteHttp.put(`${this.urlBase}/${id}`, producto);
   }
-  eliminarProducto(id: number){
+  eliminarProducto(id: number): Observable<Object>{
     return this.clienteHttp.delete(`${this.urlBase}/${id}`);
   }
   constructor() {}

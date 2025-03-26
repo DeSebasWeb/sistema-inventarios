@@ -34,7 +34,11 @@ export class ProductoListaComponent {
     this.enrutador.navigate(['editar-producto', idProducto]);
   }
 
-  eliminarProducto(idProducto: number){
-
+  eliminarProducto(id: number){
+    this.productoServicio.eliminarProducto(id).subscribe({
+      next: (datos) =>{
+        this.ngOnInit();
+      }
+    });
   }
 }
