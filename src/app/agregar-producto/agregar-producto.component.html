@@ -1,7 +1,7 @@
 
 <div class="container-fluid w-50 mt-3">
   <h2 class="text-warning text-center">{{title}}</h2>
-  <form (ngSubmit)="onSubmit">
+  <form (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <label for="descripcion" class="form-label">Descripcion del producto</label>
       <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="producto.descripcion">
