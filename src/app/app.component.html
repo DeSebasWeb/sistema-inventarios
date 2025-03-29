@@ -9,6 +9,10 @@
         <a class="nav-link active" aria-current="page" [routerLink]="'productos'" routerLinkActive="active">Inicio</a>
         <a class="nav-link" [routerLink]="'agregar-producto'" routerLinkActive="active">Agregar producto</a>
       </div>
+      <form class="d-flex ms-auto" role="search" (ngSubmit)="buscarProducto()">
+        <input class="form-control me-2" type="search" placeholder="Id" aria-label="id" [(ngModel)]="idEncontrar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
     </div>
   </div>
 </nav>
