@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProductoListaComponent } from "./producto-lista/producto-lista.component";
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { Producto } from './producto';
+import { ProductoService } from './producto.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   idEncontrar!: number;
+  producto!:Producto;
+  private productoServicio = inject(ProductoService);
   buscarProducto(){
-
+    this.productoServicio.encontrarProductoPorId(this.idEncontrar).subscribe({
+      next: (productoEncontrado) =>{
+        this.producto = productoEncontrado;
+      },
+      error: (errores: any) =>{
+        console.log(errores);
+      }
+    });
   }
 }
