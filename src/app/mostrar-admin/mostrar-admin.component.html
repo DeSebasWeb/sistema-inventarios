@@ -7,13 +7,15 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" [routerLink]="'productos'" routerLinkActive="active">Inicio</a>
-        <a class="nav-link" [routerLink]="'agregar-producto'" routerLinkActive="active">Agregar producto</a>
+        <a class="nav-link" [routerLink]="'agregar-producto'" routerLinkActive="active">Registrar producto</a>
       </div>
       <form class="d-flex ms-auto" role="search">
-        <input class="form-control me-2" type="search" placeholder="Id" aria-label="id" [(ngModel)]="idEncontrar">
+        <!-- Corregir el error del ngModel [(ngModel)]="idEncontrar"-->
+        <input class="form-control me-2" type="search" placeholder="Id" aria-label="id" >
         <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
     </div>
   </div>
 </nav>
   <router-outlet></router-outlet>
+

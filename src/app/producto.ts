@@ -1,7 +1,10 @@
 export class Producto {
   id!: number;
+  nombre!: string;
   descripcion!: string;
-  precio!: number;
-  cantExistencia!: number;
+  precioCompra !: number;
+  precioVenta !: number;
+  stock !: number;
   categoria!: string;
+  fechaRegistro !: string;
 }

@@ -6,10 +6,13 @@
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">Descripcion</th>
-        <th scope="col">Precio</th>
-        <th scope="col">Existencias</th>
-        <th scope>Categoria</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">descripcion</th>
+        <th scope="col">Precio Compra</th>
+        <th scope="col">Precio Venta</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Fecha de registro</th>
         <th scope="col" class="text-center">Acciones</th>
       </tr>
     </thead>
@@ -17,10 +20,13 @@
       @for (producto of productos;track producto.id) {
         <tr>
           <th scope="row">{{producto.id}}</th>
+          <td>{{producto.nombre}}</td>
           <td>{{producto.descripcion}}</td>
-          <td>{{producto.precio}}</td>
-          <td>{{producto.cantExistencia}}</td>
+          <td>{{producto.precioCompra}}</td>
+          <td>{{producto.precioVenta}}</td>
+          <td>{{producto.stock}}</td>
           <td>{{producto.categoria}}</td>
+          <td>{{producto.fechaRegistro}}</td>
           <td class="text-center">
             <div class="container-fluid">
               <button class="btn btn-primary me-3" (click)="editarProducto(producto.id)">Editar</button>

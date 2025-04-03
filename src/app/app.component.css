@@ -1,12 +1,1 @@
-nav a {
-  text-decoration: none; /* Quita el subrayado predeterminado */
-  color: #B0B3B8; /* Color de los enlaces inactivos */
-  padding: 5px 10px; /* Espaciado para mejor apariencia */
-  transition: all 0.3s ease-in-out;
-}
 
-nav a:hover {
-  color: #FFD700; /* Amarillo suave para resaltar */
-  text-decoration: underline; /* Agrega el subrayado al pasar el mouse */
-  text-underline-offset: 4px; /* Desplaza el subrayado un poco hacia abajo */
-}
