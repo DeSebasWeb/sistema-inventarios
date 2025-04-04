@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { ProductoListaComponent } from './producto-lista/producto-lista.component';
-import { AgregarProductoComponent } from './agregar-producto/agregar-producto.component';
-import { EditarProductoComponent } from './editar-producto/editar-producto.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { ProductoListaComponent } from './componentes/producto-lista/producto-lista.component';
+import { AgregarProductoComponent } from './componentes/agregar-producto/agregar-producto.component';
+import { EditarProductoComponent } from './componentes/editar-producto/editar-producto.component';
+import { SignInComponent } from './componentes/sign-in/sign-in.component';
 
 export const routes: Routes = [
   {path: 'registro', component: SignInComponent},

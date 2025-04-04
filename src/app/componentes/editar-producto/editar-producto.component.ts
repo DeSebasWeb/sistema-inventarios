@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { Producto } from '../producto';
-import { ProductoService } from '../producto.service';
+import { Producto } from '../../modelos/producto/producto';
+import { ProductoService } from '../../servicios/producto.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 

@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule} from '@angular/forms';
-import { Producto } from '../producto';
-import { ProductoService } from '../producto.service';
+import { Producto } from '../../modelos/producto/producto';
+import { ProductoService } from '../../servicios/producto.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-agregar-producto',
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrl: './agregar-producto.component.css'
 })
 export class AgregarProductoComponent {
-  title='Crear Producto'
+  title='Agregar Producto'
   producto: Producto = new Producto();
 
   private productoServicio = inject(ProductoService);
